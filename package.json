@@ -9,19 +9,20 @@
     "lint": "eslint src --ext ts,tsx"
   },
   "dependencies": {
+    "axios": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-router-dom": "latest",
-    "axios": "latest"
+    "react-router-dom": "latest"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.1",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "typescript": "latest",
-    "tailwindcss": "latest",
     "autoprefixer": "latest",
-    "postcss": "latest"
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest",
+    "vite": "latest"
   }
 }

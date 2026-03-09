@@ -8,10 +8,7 @@ export default function CampaignTemplateBuilderPage() {
   const [channel, setChannel] = useState<Channel>('email');
   const [subject, setSubject] = useState('Welcome {{name}}');
   const [body, setBody] = useState('<p>Hello {{name}},</p>\n<p>Your event {{event.title}} is on {{event.date}}.</p>');
-  const [variablesText, setVariablesText] = useState('{
-  "name": "Amiya",
-  "event": { "title": "Launch", "date": "2026-03-15" }
-}');
+  const [variablesText, setVariablesText] = useState(JSON.stringify({ name: 'Amiya', event: { title: 'Launch', date: '2026-03-15' } }, null, 2));
   const [saving, setSaving] = useState(false);
   const [templateId, setTemplateId] = useState<string | null>(null);
   const [preview, setPreview] = useState<{ channel: Channel; subject?: string; body: string } | null>(null);
