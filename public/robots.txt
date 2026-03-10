@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://host-events.appsmagic.in/sitemap.xml
